@@ -3,9 +3,12 @@ import json
 import time
 import chess
 import chess.svg 
+
 def board_to_2d_array(board):
+
     arr = []
-    for rank in reversed(range(8)):
+
+    for rank in (range(8)):
         row = []
         for file in range(8):
             piece = board.piece_at(chess.square(file, rank))
@@ -27,9 +30,11 @@ def square_to_row_col(square, matrix):
 class ProcessPressedKeys:
 
     def __init__(self, data):
+        
         self.update_data(data)
 
     def load_game_state(self):
+
         game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / "game_state.json"
         if game_state_path.exists():
             with open(game_state_path, "r") as f:
@@ -40,11 +45,10 @@ class ProcessPressedKeys:
         self.data = data
         self.pressed_keys = data["pressed_keys"]
         self.matrix = data["matrix"]
+        self.chose_key = data.get("chose_key", None)
         self.timestamp = data["timestamp"]
 
     def process(self):
-
-
 
         self.game_state = self.load_game_state()
 
@@ -52,17 +56,9 @@ class ProcessPressedKeys:
         
             return {"status": "error", "message": "Failed to load game state"}
 
-
         fen = self.game_state.get("fen", chess.STARTING_FEN)
         board = chess.Board(fen)
 
-        svg_data = chess.svg.board(
-            board,
-            size=350,
-        )  
-
-        with open("chessboard.svg", "w") as f:
-            f.write(svg_data)
 
         try:
 
@@ -85,6 +81,7 @@ class ProcessPressedKeys:
 
 
         matched_moves = []
+        
         for move in board.legal_moves:
 
             board.push(move)
@@ -95,18 +92,44 @@ class ProcessPressedKeys:
             
                 matched_moves.append(move)
 
+        if self.chose_key:
+
+            self.chose_key = chess.Move.from_uci(self.chose_key)
+
+            if self.chose_key in matched_moves:
+
+                matched_moves = [self.chose_key]
+
+
         if not matched_moves:
-            
-            return {
-                "status": "in_progress",
-                "message": "Awaiting valid move completion.",
-                "game_state": self.game_state
-            }
+            raise Exception("Invalid move")
 
 
         if len(matched_moves) > 1:
-            matched_move = next((m for m in matched_moves if m.promotion == chess.QUEEN), matched_moves[0])
+
+            # Change from last time - so basically if we have multiple matches, and those matches are promotion we promote the queen
+            # If not we send back ambigouous 
+
+            is_promotion = any(move.promotion for move in matched_moves)
+
+            if is_promotion:
+
+                matched_move = next((m for m in matched_moves if m.promotion == chess.QUEEN), matched_moves[0])
+            
+            else:
+
+                return {
+
+                    "status": "ambiguous",
+                    "message": "Multiple possible moves detected. Please clarify the move.",
+                    "possible_moves": [chess.Move.uci(move) for move in matched_moves]
+
+                }
+
+        
+
         else:
+           
             matched_move = matched_moves[0]
 
 

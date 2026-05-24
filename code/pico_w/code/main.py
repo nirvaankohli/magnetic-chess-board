@@ -1,5 +1,4 @@
 import network
-import socket
 import time
 from machine import Pin, ADC,  SPI
 import ssd1306
@@ -15,7 +14,6 @@ wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 wlan.connect(ssid, password)
 
-server_url = server_url
 endpoint = "/pressed_keys"
 
 
@@ -60,24 +58,35 @@ def convert_numbers_to_pins(numbers, pins=[Pin.IN, Pin.PULL_DOWN]):
     return [Pin(x, *pins) for x in numbers]
 
 
-def handle_key_press(pressed_keys, matrix):
+def handle_key_press(pressed_keys, matrix, chose_key=None):
+
+
+    global move
 
     response = urequests.post(
         server_url + endpoint,
-        json={"pressed_keys": pressed_keys, "matrix": matrix, "timestamp": time.time()},
+        json={"pressed_keys": pressed_keys, "matrix": matrix, "timestamp": time.time(), "chose_key": chose_key},
     )
 
     if response.status_code == 200:
 
-        response_data = response.json()
+        
+        data = response.json()
 
-        if response_data.get("white_to_move"):
+        response.close()
 
-            move = "w"
+        if data.get("status") == "success":
 
-        else:
+            if data.get("white_to_move"):
 
-            move = "b"
+                move = "w"
+
+            else:
+                
+                move = "b"
+        
+        return data
+
 
 def handle_button(type_button):
 
@@ -87,12 +96,63 @@ def handle_button(type_button):
     
     return False
 
+def handle_next_move(current_pressed, matrix, display, white_button, black_button, chose_key=None):
+
+    result = handle_key_press(current_pressed, matrix, chose_key=chose_key)
+
+    if result.get("status") == "success":
+
+        display.fill(0)
+        display.text("Move applied!", 0, 0)
+        display.show()
+
+    elif result.get("status") == "error":
+
+        display.fill(0)
+        display.text("Error applying move", 0, 0)
+        display.text("Invalid move. Try again.", 0, 10)
+        display.show()
+
+    elif result.get("status") == "ambigouous":
+
+        display.fill(0)
+        display.text("Multiple moves detected!", 0, 0)
+        display.text("Select a move:", 0, 10)
+        
+        list_of_moves = result.get("possible_moves", [])
+
+        for idx, move in enumerate(list_of_moves):
+
+            display.text(f"{idx+1}. {move}", 0, 20 + idx*10)
+        
+
+        display.show()
+
+        indicator = 0
+
+        while True:
+            current_time = time.ticks_ms()
+
+            if white_button[0].value() == 0 and time.ticks_diff(current_time, white_button[1]) > white_button[2]:
+
+                white_button[1] = current_time
+
+                handle_next_move(current_pressed, matrix, display, white_button, black_button, chose_key=list_of_moves[indicator])
+
+                break
+
+            if black_button[0].value() == 0 and time.ticks_diff(current_time, black_button[1]) > black_button[2]:
+
+                indicator = (indicator + 1) % len(list_of_moves)
+                black_button[1] = current_time
+
+
 
 def main():
 
     # Place Holder Pins(for OLED & buttons)
 
-    white_button = [Pin(15, Pin.IN, Pin.PULL_DOWN), 200]
+    white_button = [Pin(15, Pin.IN, Pin.PULL_DOWN), 0, 200]
     black_button = [Pin(26, Pin.IN, Pin.PULL_DOWN), 0, 200]
 
     rows_reed_switch_pins = list(reversed([6, 7, 8, 9, 10, 11, 12, 13]))
@@ -105,6 +165,10 @@ def main():
     cs = Pin(15) 
 
     matrix = create_matrix(8, 8)
+
+    # placeholder to replace with actual logic
+
+    handle = ""
 
     display = ssd1306.SSD1306_SPI(128, 64, hspi, dc, rst, cs)
 
@@ -132,12 +196,12 @@ def main():
         if white_button[0].value() == 0 and time.ticks_diff(current_time, white_button[1]) > white_button[2]:
 
             correct_button_pressed = handle_button("w")
-            white_button[1] = current_time
+            white_button[1] = time.ticks_ms()
 
         if black_button[0].value() == 0 and time.ticks_diff(current_time, black_button[1]) > black_button[2]:
             
             correct_button_pressed = handle_button("b")
-            black_button[1] = current_time
+            black_button[1] = time.ticks_ms()
 
         current_pressed = scan_matrix(row_pins, column_pins)
 
@@ -145,7 +209,10 @@ def main():
 
             if current_pressed:
 
-                handle_key_press(current_pressed, matrix)
+                handle_next_move(current_pressed, matrix, display, white_button, black_button)
+
+            
+                
 
 if __name__ == "__main__":
 
