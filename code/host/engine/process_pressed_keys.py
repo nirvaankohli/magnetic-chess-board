@@ -29,16 +29,41 @@ def square_to_row_col(square, matrix):
 
 class ProcessPressedKeys:
 
-    def __init__(self, data):
+    def __init__(self, data, game_id):
         
         self.update_data(data)
+        self.game_id = game_id
 
     def load_game_state(self):
 
-        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / "game_state.json"
+
+        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
+        
         if game_state_path.exists():
+        
             with open(game_state_path, "r") as f:
+        
                 return json.load(f)
+            
+        else:
+
+            with open(game_state_path, "w") as f:
+                
+                initial_state = {
+                    "fen": chess.STARTING_FEN,
+                    "board": board_to_2d_array(chess.Board()),
+                    "magnetic_state": board_to_magnetic_state(chess.Board()),
+                    "white_to_move": True,
+                    "white_timer": 300,
+                    "game_over": False,
+                    "current_game_id": self.game_id,
+                    "black_timer": 300,
+                    "last_move_timestamp": self.timestamp,
+                    "move_history": []
+                }
+
+                json.dump(initial_state, f, indent=4)
+        
         return {}
     
     def update_data(self, data):
@@ -181,7 +206,7 @@ class ProcessPressedKeys:
 
 
 
-        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / "game_state.json"
+        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
         with open(game_state_path, "w") as f:
             json.dump(self.game_state, f, indent=4)
 
