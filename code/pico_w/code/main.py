@@ -16,6 +16,20 @@ wlan.connect(ssid, password)
 
 endpoint = "/pressed_keys"
 
+# Place Holder Pins(for OLED & buttons)
+# Pin declarations
+
+white_button = [Pin(15, Pin.IN, Pin.PULL_DOWN), 0, 200]
+black_button = [Pin(26, Pin.IN, Pin.PULL_DOWN), 0, 200]
+
+rows_reed_switch_pins = list(reversed([6, 7, 8, 9, 10, 11, 12, 13]))
+columns_reed_switch_pins = [16, 17, 18, 19, 20, 21, 22, 14]
+
+hspi = SPI(1)  
+
+dc = Pin(4) 
+rst = Pin(5)   
+cs = Pin(15) 
 
 def scan_matrix(row_pins, col_pins):
 
@@ -58,13 +72,13 @@ def convert_numbers_to_pins(numbers, pins=[Pin.IN, Pin.PULL_DOWN]):
     return [Pin(x, *pins) for x in numbers]
 
 
-def handle_key_press(pressed_keys, matrix, chose_key=None):
+def handle_key_press(pressed_keys, matrix, game_id, chose_key=None):
 
 
     global move
 
     response = urequests.post(
-        server_url + endpoint,
+        server_url + endpoint + f"?game_id={game_id}",
         json={"pressed_keys": pressed_keys, "matrix": matrix, "timestamp": time.time(), "chose_key": chose_key},
     )
 
@@ -96,9 +110,9 @@ def handle_button(type_button):
     
     return False
 
-def handle_next_move(current_pressed, matrix, display, white_button, black_button, chose_key=None):
+def handle_next_move(current_pressed, matrix, display, white_button, black_button, game_id, chose_key=None):
 
-    result = handle_key_press(current_pressed, matrix, chose_key=chose_key)
+    result = handle_key_press(current_pressed, matrix, game_id=game_id, chose_key=chose_key)
 
     if result.get("status") == "success":
 
@@ -147,46 +161,22 @@ def handle_next_move(current_pressed, matrix, display, white_button, black_butto
                 black_button[1] = current_time
 
 
+matrix = create_matrix(8, 8)
 
-def main():
+display = ssd1306.SSD1306_SPI(128, 64, hspi, dc, rst, cs)
 
-    # Place Holder Pins(for OLED & buttons)
+row_pins = convert_numbers_to_pins(rows_reed_switch_pins, [Pin.OUT])
+column_pins = convert_numbers_to_pins(columns_reed_switch_pins, [Pin.IN, Pin.PULL_DOWN])
 
-    white_button = [Pin(15, Pin.IN, Pin.PULL_DOWN), 0, 200]
-    black_button = [Pin(26, Pin.IN, Pin.PULL_DOWN), 0, 200]
-
-    rows_reed_switch_pins = list(reversed([6, 7, 8, 9, 10, 11, 12, 13]))
-    columns_reed_switch_pins = [16, 17, 18, 19, 20, 21, 22, 14]
-
-    hspi = SPI(1)  
-
-    dc = Pin(4) 
-    rst = Pin(5)   
-    cs = Pin(15) 
-
-    matrix = create_matrix(8, 8)
-
-    # placeholder to replace with actual logic
-
-    handle = ""
-
-    display = ssd1306.SSD1306_SPI(128, 64, hspi, dc, rst, cs)
-
-
-    print("Matrix of reed switches:")
-    for row in matrix:
-        print(row)
-
-
-    row_pins = convert_numbers_to_pins(rows_reed_switch_pins, [Pin.OUT])
-    column_pins = convert_numbers_to_pins(columns_reed_switch_pins, [Pin.IN, Pin.PULL_DOWN])
-
-    while not wlan.isconnected() and wlan.status() >= 0:
-
-        print("Waiting to connect...")
-        time.sleep(1)
+def play_game():
 
     last_pressed = []
+
+    # get initial state 
+
+    game_id = urequests.post(server_url + "/make_game").json().get("game_id").json()
+
+    game_id = game_id.get("game_id")
 
     while True:
 
@@ -209,10 +199,60 @@ def main():
 
             if current_pressed:
 
-                handle_next_move(current_pressed, matrix, display, white_button, black_button)
+                handle_next_move(current_pressed, matrix, display, white_button, black_button, game_id)
+                last_pressed = current_pressed
+
+        if not current_pressed:
+            last_pressed = current_pressed
+
+
+
+
+
+def main():
+
+
+    while not wlan.isconnected() and wlan.status() >= 0:
+
+        print("Waiting to connect...")
+        time.sleep(1)
+
+    # connected, now going to confirm start of game
+
+    display.fill(0)
+    display.text("Connected to WiFi!", 0, 0)
+    display.show()
+    time.sleep(2)
+
+    while True:
+
+        display.fill(0)
+        display.text("Start game?", 0, 0)
+        display.text("Hold white button to start", 0, 10)
+        display.show()
+
+        while True:
+
+            current_time = time.ticks_ms()
+
+            # hold 2 seconds logic
+
+            if white_button[0].value() == 0:
+
+                if press_time == 0:
+                    press_time = time.ticks_ms()
+                    
+                elif not held and time.ticks_diff(time.ticks_ms(), press_time) > 2000:
+
+                    play_game()
+                    break
+
+            else:
+                    
+                press_time = 0
 
             
-                
+            
 
 if __name__ == "__main__":
 

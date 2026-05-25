@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import re
 import time
 import chess
 import chess.svg 
@@ -17,7 +18,7 @@ def board_to_2d_array(board):
     return arr
 
 def board_to_magnetic_state(board):
-    return [[1 if board.piece_at(chess.square(file, rank)) else 0 for file in range(8)] for rank in reversed(range(8))]
+    return [[1 if board.piece_at(chess.square(file, rank)) else 0 for file in range(8)] for rank in (range(8))]
 
 def square_to_row_col(square, matrix):
     name = chess.square_name(square)
@@ -28,27 +29,19 @@ def square_to_row_col(square, matrix):
     return None
 
 class ProcessPressedKeys:
-
     def __init__(self, data, game_id):
         
+        self.game_id = re.sub(r'[^a-zA-Z0-9]', '', game_id) if game_id else "default"
         self.update_data(data)
-        self.game_id = game_id
 
     def load_game_state(self):
-
-
         game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
         
         if game_state_path.exists():
-        
             with open(game_state_path, "r") as f:
-        
                 return json.load(f)
-            
         else:
-
             with open(game_state_path, "w") as f:
-                
                 initial_state = {
                     "fen": chess.STARTING_FEN,
                     "board": board_to_2d_array(chess.Board()),
@@ -61,10 +54,10 @@ class ProcessPressedKeys:
                     "last_move_timestamp": self.timestamp,
                     "move_history": []
                 }
-
                 json.dump(initial_state, f, indent=4)
+            return initial_state
+    
         
-        return {}
     
     def update_data(self, data):
         self.data = data
@@ -207,6 +200,7 @@ class ProcessPressedKeys:
 
 
         game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
+        
         with open(game_state_path, "w") as f:
             json.dump(self.game_state, f, indent=4)
 
