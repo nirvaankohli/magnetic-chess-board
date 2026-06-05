@@ -1,6 +1,6 @@
 import network
 import time
-from machine import Pin, ADC,  SPI
+from machine import Pin, ADC, I2C
 import ssd1306
 from secrets import ssid, password, server_url
 import random
@@ -16,20 +16,13 @@ wlan.connect(ssid, password)
 
 endpoint = "/pressed_keys"
 
-# Place Holder Pins(for OLED & buttons)
-# Pin declarations
-
-white_button = [Pin(15, Pin.IN, Pin.PULL_DOWN), 0, 200]
-black_button = [Pin(26, Pin.IN, Pin.PULL_DOWN), 0, 200]
+white_button = [Pin(2, Pin.IN, Pin.PULL_DOWN), 0, 200]
+black_button = [Pin(3, Pin.IN, Pin.PULL_DOWN), 0, 200]
 
 rows_reed_switch_pins = list(reversed([6, 7, 8, 9, 10, 11, 12, 13]))
 columns_reed_switch_pins = [16, 17, 18, 19, 20, 21, 22, 14]
 
-hspi = SPI(1)  
-
-dc = Pin(4) 
-rst = Pin(5)   
-cs = Pin(15) 
+i2c = I2C(0, scl=Pin(5), sda=Pin(4))
 
 def scan_matrix(row_pins, col_pins):
 
@@ -163,7 +156,7 @@ def handle_next_move(current_pressed, matrix, display, white_button, black_butto
 
 matrix = create_matrix(8, 8)
 
-display = ssd1306.SSD1306_SPI(128, 64, hspi, dc, rst, cs)
+display = ssd1306.SSD1306_I2C(128, 64, i2c)
 
 row_pins = convert_numbers_to_pins(rows_reed_switch_pins, [Pin.OUT])
 column_pins = convert_numbers_to_pins(columns_reed_switch_pins, [Pin.IN, Pin.PULL_DOWN])

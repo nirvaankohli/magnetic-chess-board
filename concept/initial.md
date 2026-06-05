@@ -35,3 +35,5 @@ Let us just figure out what stuff is needed and what it will cost :O
 - 2 keys
 - A nob
 - and 1 inch oleds
+
+https://www.magnetshop.com/neodymium-disc-magnet-42dne0608-ni.html for magents
