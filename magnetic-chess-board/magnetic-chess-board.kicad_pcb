@@ -755,6 +755,12 @@
 		(path "/ecb7fc9e-36f3-4b48-aac0-78bbf570bceb")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1069,6 +1075,12 @@
 		(path "/e83f5f42-e9e4-4865-b9e3-75aec51d8edd")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2289,6 +2301,12 @@
 		(path "/c878433c-55f5-4e1f-996a-4567e0b80785")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2603,6 +2621,12 @@
 		(path "/4032c347-e842-4e32-8b72-5e0d512aaf16")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3521,6 +3545,12 @@
 		(path "/38336bbd-9c10-4c5b-934d-28b4f5cc2da0")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3835,6 +3865,12 @@
 		(path "/b2911b59-1b72-4fea-9da8-282446c5b15f")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5055,6 +5091,12 @@
 		(path "/1111e830-a8f7-4fe9-934b-24c4a12184b5")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6275,6 +6317,12 @@
 		(path "/e15fc826-89f6-4f69-a7d8-9c2081650e94")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7797,6 +7845,12 @@
 		(path "/837fbc02-9106-4754-9d72-4727ea3f8cb4")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9603,6 +9657,12 @@
 		(path "/cf223bf1-c252-485d-b20f-ca37d8375482")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10521,6 +10581,12 @@
 		(path "/6ac2821e-0759-426c-961b-f5263f28a321")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10835,6 +10901,12 @@
 		(path "/eb9703b0-32b1-4ce9-a501-9e8ba20c0fdd")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11149,6 +11221,12 @@
 		(path "/01b75b29-6c0f-4053-8347-435379a17333")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11400,12 +11478,12 @@
 			)
 		)
 	)
-	(footprint "ScottoKeebs_Choc:Choc_V2"
+	(footprint "KiSwitch_Hotswap_Kalih:SW_Hotswap_Kailh_Choc_V1"
 		(layer "F.Cu")
 		(uuid "3baec8f7-0a93-4183-aa25-a9b35aa21268")
 		(at 295.2125 166.1225)
-		(descr "Choc keyswitch V2 CPG1353 V2")
-		(tags "Choc Keyswitch Switch CPG1353 V2 Cutout")
+		(descr "Kailh Choc keyswitch V1 CPG1350 V1 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 Hotswap Cutout")
 		(property "Reference" "S2"
 			(at 0 -9 0)
 			(layer "F.SilkS")
@@ -11459,7 +11537,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.6 -7.6)
@@ -11502,6 +11580,286 @@
 			(uuid "baafe8e2-734a-48ab-a524-7b79521291f4")
 		)
 		(fp_line
+			(start -2.416 -7.409)
+			(end -1.479 -8.346)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d2ab1352-fc07-4d94-aa65-61951e8d2b06")
+		)
+		(fp_line
+			(start -1.479 -8.346)
+			(end 1.268 -8.346)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c32540f1-6449-4f98-ba38-e4029e51129c")
+		)
+		(fp_line
+			(start -1.479 -3.554)
+			(end -2.5 -4.575)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "927932f8-6ee0-4b89-87e8-9a4c1c231e16")
+		)
+		(fp_line
+			(start 1.168 -3.554)
+			(end -1.479 -3.554)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "80942e23-5691-4f6d-9f53-f04a87d798ea")
+		)
+		(fp_line
+			(start 1.268 -8.346)
+			(end 1.671 -8.266)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8be18dc3-b07a-4f7b-b5bc-11a8c9e6f9db")
+		)
+		(fp_line
+			(start 1.671 -8.266)
+			(end 2.013 -8.037)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0fcd0422-c025-4e63-94b7-87f95e425ed2")
+		)
+		(fp_line
+			(start 1.73 -3.449)
+			(end 1.168 -3.554)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3ec51525-4645-4c2d-9e14-525f1e5ff348")
+		)
+		(fp_line
+			(start 2.013 -8.037)
+			(end 2.546 -7.504)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b50456af-ea67-4953-b298-622aeff9b60f")
+		)
+		(fp_line
+			(start 2.209 -3.15)
+			(end 1.73 -3.449)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8402e5fb-b69d-45c5-a7b3-ccf4dcab593f")
+		)
+		(fp_line
+			(start 2.546 -7.504)
+			(end 2.546 -7.282)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "09af480e-c404-462e-8a7b-d4f06d1e274f")
+		)
+		(fp_line
+			(start 2.546 -7.282)
+			(end 2.633 -6.844)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "72467bcd-eb3f-407a-ae9e-a15187a862ac")
+		)
+		(fp_line
+			(start 2.547 -2.697)
+			(end 2.209 -3.15)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4bf3c7c5-c8ea-4e06-b4fe-96f417957fd9")
+		)
+		(fp_line
+			(start 2.633 -6.844)
+			(end 2.877 -6.477)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cb75d4d8-594e-40c2-90cb-ad1d8f9afd1e")
+		)
+		(fp_line
+			(start 2.701 -2.139)
+			(end 2.547 -2.697)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2a678c29-2941-437d-b631-7cf3c9b24425")
+		)
+		(fp_line
+			(start 2.783 -1.841)
+			(end 2.701 -2.139)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f0d32858-9bac-40e8-9e81-c0256d182d82")
+		)
+		(fp_line
+			(start 2.877 -6.477)
+			(end 3.244 -6.233)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "fea97b72-1ea9-47cb-9289-4c117a04c7bb")
+		)
+		(fp_line
+			(start 2.976 -1.583)
+			(end 2.783 -1.841)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "dad436c0-9f0a-4a93-92f5-9394c0cf6725")
+		)
+		(fp_line
+			(start 3.244 -6.233)
+			(end 3.682 -6.146)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6db5d4be-3459-4e65-b914-237c2eaec7da")
+		)
+		(fp_line
+			(start 3.25 -1.413)
+			(end 2.976 -1.583)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8e9046f6-5488-4b28-bfac-811fc758d6ad")
+		)
+		(fp_line
+			(start 3.56 -1.354)
+			(end 3.25 -1.413)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "722d6af3-541a-4858-b64d-3a2658100aac")
+		)
+		(fp_line
+			(start 3.682 -6.146)
+			(end 6.482 -6.146)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "50fe767a-8622-4b4f-be2b-5b52d3ce709b")
+		)
+		(fp_line
+			(start 6.482 -6.146)
+			(end 6.809 -6.081)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "fb6493f4-c202-4526-8cc6-d8ca05a4cb9c")
+		)
+		(fp_line
+			(start 6.809 -6.081)
+			(end 7.092 -5.892)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f97d605e-5dd6-4a17-8b83-4bf99c054a20")
+		)
+		(fp_line
+			(start 7.092 -5.892)
+			(end 7.281 -5.609)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d36ede8a-f03a-4cac-b3ed-bb0d99c8e804")
+		)
+		(fp_line
+			(start 7.281 -5.609)
+			(end 7.366 -5.182)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "efdfb7e6-790d-41ff-a4d8-1403b7cbf598")
+		)
+		(fp_line
+			(start 7.283 -2.296)
+			(end 7.646 -2.296)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "a727d85c-be74-4f46-8196-ac3d6e56733a")
+		)
+		(fp_line
+			(start 7.646 -2.296)
+			(end 7.646 -1.354)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cc81c5f0-74d2-46e9-ae5b-cc9919510674")
+		)
+		(fp_line
+			(start 7.646 -1.354)
+			(end 3.56 -1.354)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "daaeffa8-e558-44b6-9f97-ed2d8177c06a")
+		)
+		(fp_line
 			(start -7.25 -7.25)
 			(end -7.25 7.25)
 			(stroke
@@ -11542,6 +11900,306 @@
 			(uuid "106d5a65-4e7f-4faf-8896-aaebb4ebf13b")
 		)
 		(fp_line
+			(start -2.452 -7.523)
+			(end -1.523 -8.452)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1b01e983-6ff6-4280-ab18-da7fb10cbf1b")
+		)
+		(fp_line
+			(start -2.452 -4.377)
+			(end -2.452 -7.523)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "445f346d-f824-4fed-bb49-59970fdca45d")
+		)
+		(fp_line
+			(start -1.523 -8.452)
+			(end 1.278 -8.452)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d1317bf4-9919-4dec-a3a8-8e340ef1e4a8")
+		)
+		(fp_line
+			(start -1.523 -3.448)
+			(end -2.452 -4.377)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ca7d2bf1-95d3-4a35-9e69-107fee128115")
+		)
+		(fp_line
+			(start 1.159 -3.448)
+			(end -1.523 -3.448)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0c34b0e8-b9ed-45fb-aff2-ef81a39d1cf8")
+		)
+		(fp_line
+			(start 1.278 -8.452)
+			(end 1.712 -8.366)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4d8f7aed-5414-4fa7-a149-8ea1489ab1a7")
+		)
+		(fp_line
+			(start 1.691 -3.348)
+			(end 1.159 -3.448)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "93367be9-3582-4c47-be86-19ba603a705a")
+		)
+		(fp_line
+			(start 1.712 -8.366)
+			(end 2.081 -8.119)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3fd7da8b-f693-4ec8-821f-2a5f1e2da3f8")
+		)
+		(fp_line
+			(start 2.081 -8.119)
+			(end 2.652 -7.548)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0ea5f48f-0179-4534-98b2-f3e5b5fed36d")
+		)
+		(fp_line
+			(start 2.136 -3.071)
+			(end 1.691 -3.348)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "87db3566-06a6-4a82-9c3b-a3ee875931ac")
+		)
+		(fp_line
+			(start 2.45 -2.65)
+			(end 2.136 -3.071)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "7857be6a-04d8-4b43-a37e-82382f014462")
+		)
+		(fp_line
+			(start 2.599 -2.111)
+			(end 2.45 -2.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "26ae25c7-4681-40c5-b584-6d2c730b49c0")
+		)
+		(fp_line
+			(start 2.652 -7.548)
+			(end 2.652 -7.292)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "741ebdc7-4593-4268-8f29-a612922d559d")
+		)
+		(fp_line
+			(start 2.652 -7.292)
+			(end 2.733 -6.885)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3fb66394-d4c3-497a-9ad5-55b0dac1749f")
+		)
+		(fp_line
+			(start 2.687 -1.794)
+			(end 2.599 -2.111)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "bc0abde8-3a95-42dd-8573-c420d324d939")
+		)
+		(fp_line
+			(start 2.733 -6.885)
+			(end 2.953 -6.553)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5166b2fc-4396-48a6-921d-f8098074313d")
+		)
+		(fp_line
+			(start 2.903 -1.503)
+			(end 2.687 -1.794)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e821ff5e-b213-46de-98a0-d327528da3f7")
+		)
+		(fp_line
+			(start 2.953 -6.553)
+			(end 3.285 -6.333)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6bd15c77-18bd-445d-b0f0-90c4ff6ad4b4")
+		)
+		(fp_line
+			(start 3.211 -1.312)
+			(end 2.903 -1.503)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "4207cca9-6844-465e-9368-eafbd1c287d1")
+		)
+		(fp_line
+			(start 3.285 -6.333)
+			(end 3.692 -6.252)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "8055dc53-41e4-4fa8-97eb-ef666bd134ea")
+		)
+		(fp_line
+			(start 3.55 -1.248)
+			(end 3.211 -1.312)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "57737356-20ee-42a0-a1f3-4e4d0f5eff61")
+		)
+		(fp_line
+			(start 3.692 -6.252)
+			(end 6.492 -6.252)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5e78eb1b-38e1-45ab-b7f2-1b72be26b4c3")
+		)
+		(fp_line
+			(start 6.492 -6.252)
+			(end 6.85 -6.181)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9acb03ed-0471-4d9a-8105-033b50ecf291")
+		)
+		(fp_line
+			(start 6.85 -6.181)
+			(end 7.168 -5.968)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f6da951b-bf11-405a-ac34-451e4a9993d6")
+		)
+		(fp_line
+			(start 7.168 -5.968)
+			(end 7.381 -5.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3b69e75c-24de-4528-b1bd-772f5479e9ca")
+		)
+		(fp_line
+			(start 7.381 -5.65)
+			(end 7.452 -5.292)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d418e056-cc20-47b7-9102-d6ef4b25bd34")
+		)
+		(fp_line
+			(start 7.452 -5.292)
+			(end 7.452 -2.402)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cdc26c2a-2fbf-4354-9cac-301e99d8f0d3")
+		)
+		(fp_line
+			(start 7.452 -2.402)
+			(end 7.752 -2.402)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "558c25c5-203b-41ae-852b-bc0ab7279667")
+		)
+		(fp_line
+			(start 7.752 -2.402)
+			(end 7.752 -1.248)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "22ef5bd1-3645-4f4e-bc68-c5686a25825c")
+		)
+		(fp_line
+			(start 7.752 -1.248)
+			(end 3.55 -1.248)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5c380c9d-45f0-4ddb-a41f-77012ff0f203")
+		)
+		(fp_line
 			(start -7.75 -7.75)
 			(end -7.75 7.75)
 			(stroke
@@ -11580,6 +12238,286 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "15d49f7e-256c-4e81-9ad2-985ace6f22ec")
+		)
+		(fp_line
+			(start -2.275 -7.45)
+			(end -1.45 -8.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "dcb7f850-775a-4125-8577-e5f436e64462")
+		)
+		(fp_line
+			(start -1.45 -8.275)
+			(end 1.261 -8.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4a262f96-509c-4f0f-946d-e3e6da9f763a")
+		)
+		(fp_line
+			(start -1.45 -3.625)
+			(end -2.275 -4.45)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7cdcab0a-f6a1-4622-bee8-99433b3c4e7a")
+		)
+		(fp_line
+			(start 1.175 -3.625)
+			(end -1.45 -3.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1b2779c7-b94b-4b59-9dc2-4c907b706d7e")
+		)
+		(fp_line
+			(start 1.261 -8.275)
+			(end 1.643 -8.199)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e9f00fca-386e-44cd-8549-9dd32768b084")
+		)
+		(fp_line
+			(start 1.643 -8.199)
+			(end 1.968 -7.982)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "21ccfa6c-2b91-45ad-bc80-29e625f3d38f")
+		)
+		(fp_line
+			(start 1.756 -3.516)
+			(end 1.175 -3.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3277e5c7-c1e3-4b10-afd0-4465cc882725")
+		)
+		(fp_line
+			(start 1.968 -7.982)
+			(end 2.475 -7.475)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5f400e4c-e17e-4d88-a8e8-64b0d965bf47")
+		)
+		(fp_line
+			(start 2.258 -3.203)
+			(end 1.756 -3.516)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a1fc692e-4f7e-427b-9257-b2c13598f73c")
+		)
+		(fp_line
+			(start 2.475 -7.475)
+			(end 2.475 -7.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "dfc539ba-1b3d-4c0a-83cd-7337b26308a0")
+		)
+		(fp_line
+			(start 2.475 -7.275)
+			(end 2.566 -6.816)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ed109b21-176f-4be2-9866-e461ebad00f6")
+		)
+		(fp_line
+			(start 2.566 -6.816)
+			(end 2.826 -6.426)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "a0a113ab-9e49-49c0-afe7-4981cf424dae")
+		)
+		(fp_line
+			(start 2.612 -2.729)
+			(end 2.258 -3.203)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "33d19338-b1d2-4209-92cb-2d952e8cc816")
+		)
+		(fp_line
+			(start 2.769 -2.158)
+			(end 2.612 -2.729)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c0c2b79f-32be-419c-8fb8-bb791a55ff41")
+		)
+		(fp_line
+			(start 2.826 -6.426)
+			(end 3.216 -6.166)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d297591b-deb3-4442-b8c2-9961302b648d")
+		)
+		(fp_line
+			(start 2.848 -1.873)
+			(end 2.769 -2.158)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "bf90995d-04a5-4d3a-a652-a276fa1c03c6")
+		)
+		(fp_line
+			(start 3.025 -1.636)
+			(end 2.848 -1.873)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1d4f8ae5-897b-4bcb-b12e-e6f24726b611")
+		)
+		(fp_line
+			(start 3.216 -6.166)
+			(end 3.675 -6.075)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "502ed1b6-3ccc-4d89-99ad-00690454acff")
+		)
+		(fp_line
+			(start 3.276 -1.48)
+			(end 3.025 -1.636)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "92b0e14e-8bd3-4452-a471-9cd931a4f7a5")
+		)
+		(fp_line
+			(start 3.567 -1.425)
+			(end 3.276 -1.48)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1b6c7dae-2980-4ee6-b323-c914dc60307e")
+		)
+		(fp_line
+			(start 3.675 -6.075)
+			(end 6.475 -6.075)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "44ddf055-26e5-4ee2-9263-9ad29f047009")
+		)
+		(fp_line
+			(start 6.475 -6.075)
+			(end 6.781 -6.014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "18b7175c-ff1a-4794-97c9-e5a30f09b28e")
+		)
+		(fp_line
+			(start 6.781 -6.014)
+			(end 7.041 -5.841)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "29cefaed-ce42-4a52-a9e6-9e4f1094ed71")
+		)
+		(fp_line
+			(start 7.041 -5.841)
+			(end 7.214 -5.581)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d3883433-7768-461f-a4bb-a98f50fa1a39")
+		)
+		(fp_line
+			(start 7.214 -5.581)
+			(end 7.275 -5.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "628ded0f-7612-49b8-85d5-d429baf30601")
+		)
+		(fp_line
+			(start 7.275 -2.225)
+			(end 7.575 -2.225)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "648e8e22-10f8-4957-8d21-07bdc522defb")
+		)
+		(fp_line
+			(start 7.575 -2.225)
+			(end 7.575 -1.425)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d7490a14-1313-47b7-9909-42c807cd02bf")
+		)
+		(fp_line
+			(start 7.575 -1.425)
+			(end 3.567 -1.425)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "66f6b117-9fba-433b-ba46-83faf64124f7")
 		)
 		(fp_line
 			(start -7.5 -7.5)
@@ -11632,45 +12570,63 @@
 				)
 			)
 		)
-		(pad "" thru_hole circle
-			(at -5 5.15)
-			(size 2.6 2.6)
-			(drill 1.6)
+		(pad "" np_thru_hole circle
+			(at -5.5 0)
+			(size 1.9 1.9)
+			(drill 1.9)
 			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "786162bb-a817-43db-bf80-594b57a61b22")
+			(uuid "f05520d8-c140-423b-b9b3-a85b666e5d15")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 -5.9)
+			(size 3.05 3.05)
+			(drill 3.05)
+			(layers "*.Cu" "*.Mask")
+			(uuid "87d744d8-18cd-4214-8c09-5e655ae8c5cb")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 5.05 5.05)
-			(drill 5.05)
+			(size 3.45 3.45)
+			(drill 3.45)
 			(layers "*.Cu" "*.Mask")
 			(uuid "cd6077c1-4769-4da5-97ce-ea0ecf1793d8")
 		)
-		(pad "1" thru_hole circle
-			(at 0 -5.9)
-			(size 2.2 2.2)
-			(drill 1.2)
+		(pad "" np_thru_hole circle
+			(at 5 -3.8)
+			(size 3.05 3.05)
+			(drill 3.05)
 			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+			(uuid "786162bb-a817-43db-bf80-594b57a61b22")
+		)
+		(pad "" np_thru_hole circle
+			(at 5.5 0)
+			(size 1.9 1.9)
+			(drill 1.9)
+			(layers "*.Cu" "*.Mask")
+			(uuid "155489f3-9ef8-49ec-b648-106970f7fb7c")
+		)
+		(pad "1" smd roundrect
+			(at -3.5 -6)
+			(size 2.55 2.5)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1)
 			(net "GND")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "18be9a79-7e1a-4b87-b6d3-8abb5547d25a")
 		)
-		(pad "2" thru_hole circle
-			(at 5 -3.8)
-			(size 2.2 2.2)
-			(drill 1.2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+		(pad "2" smd roundrect
+			(at 8.5 -3.8)
+			(size 2.55 2.5)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1)
 			(net "/Key Switch 2")
 			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "64ef2724-4e8b-4b10-8f1d-031fb224e1d5")
 		)
 		(embedded_fonts no)
-		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step"
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11745,6 +12701,12 @@
 		(path "/5f69f5c9-d2df-4757-9d25-7fd3e93f05ce")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12059,6 +13021,12 @@
 		(path "/f9cce823-6620-41e1-9dfe-b876bda51598")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12373,6 +13341,12 @@
 		(path "/775b755f-ae5e-43e5-bed6-c7c5b626444a")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12989,6 +13963,12 @@
 		(path "/4430c817-911b-40ad-989a-eb25d63df8de")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13303,6 +14283,12 @@
 		(path "/6007ab31-b189-4daf-a36f-b8fc4714041d")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14221,6 +15207,12 @@
 		(path "/73b35fed-4b00-40cf-82f5-b0b1945eb3bb")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14535,6 +15527,12 @@
 		(path "/5ec8c488-570b-4e48-8c67-6ba99f18a53d")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15453,6 +16451,12 @@
 		(path "/fb35a188-9888-4927-adc4-043e6db6eefa")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15767,6 +16771,12 @@
 		(path "/8161d6bc-f201-4070-94b0-8bbe8f876bbd")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16685,6 +17695,12 @@
 		(path "/41aa3f45-74a9-490d-8489-50f009aa26bd")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16999,6 +18015,12 @@
 		(path "/3db4fdb4-d787-4641-954c-fc4165cb729b")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17313,6 +18335,12 @@
 		(path "/d4429f4f-6731-4805-beed-a160b07973f6")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17627,6 +18655,12 @@
 		(path "/b2fbb34a-78ad-496f-a5d8-25c92d447be3")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17941,6 +18975,12 @@
 		(path "/b1412426-6ac3-4572-aefc-97fd9912a2db")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18255,6 +19295,12 @@
 		(path "/7435263a-d52a-4e13-8c29-5810d7dbb84a")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18569,6 +19615,12 @@
 		(path "/5340e0bb-f4a0-4262-b5aa-7527a0d05f05")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18883,6 +19935,12 @@
 		(path "/700391ee-b5fe-476b-8a55-b57f8ffea969")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19197,6 +20255,12 @@
 		(path "/d6f8bfe3-6b6b-4a73-99b3-c5ef05be2176")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19511,6 +20575,12 @@
 		(path "/2ceaa018-9777-45c5-a78b-bf6cc7b5985e")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20731,6 +21801,12 @@
 		(path "/fe471ac6-189d-460f-9b1e-6c44e1ce14c6")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21347,6 +22423,12 @@
 		(path "/1b77a31a-b640-4026-8618-54e438c66fac")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21598,12 +22680,12 @@
 			)
 		)
 	)
-	(footprint "ScottoKeebs_Choc:Choc_V2"
+	(footprint "KiSwitch_Hotswap_Kalih:SW_Hotswap_Kailh_Choc_V1"
 		(layer "F.Cu")
 		(uuid "752a373a-b426-4138-8de6-a510f0ff6169")
 		(at 274.2465 166.1225)
-		(descr "Choc keyswitch V2 CPG1353 V2")
-		(tags "Choc Keyswitch Switch CPG1353 V2 Cutout")
+		(descr "Kailh Choc keyswitch V1 CPG1350 V1 Hotswap")
+		(tags "Kailh Choc Keyswitch Switch CPG1350 V1 Hotswap Cutout")
 		(property "Reference" "S1"
 			(at 0 -9 0)
 			(layer "F.SilkS")
@@ -21657,7 +22739,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -7.6 -7.6)
@@ -21700,6 +22782,286 @@
 			(uuid "61050317-2007-4d7e-8138-652801c8577f")
 		)
 		(fp_line
+			(start -2.416 -7.409)
+			(end -1.479 -8.346)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c4557a99-e490-46dd-bc4f-872bb1343849")
+		)
+		(fp_line
+			(start -1.479 -8.346)
+			(end 1.268 -8.346)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "03a00253-db56-4a7d-88e0-1066e034c70c")
+		)
+		(fp_line
+			(start -1.479 -3.554)
+			(end -2.5 -4.575)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6511165d-18f8-461c-abb1-d2f1744dd67b")
+		)
+		(fp_line
+			(start 1.168 -3.554)
+			(end -1.479 -3.554)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "6c409e8f-1882-404f-900d-11cc211bbb3e")
+		)
+		(fp_line
+			(start 1.268 -8.346)
+			(end 1.671 -8.266)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "433eec24-88a5-4a92-9b8c-46c8f51f447b")
+		)
+		(fp_line
+			(start 1.671 -8.266)
+			(end 2.013 -8.037)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7089b306-7612-4c87-9f73-8020cbec0433")
+		)
+		(fp_line
+			(start 1.73 -3.449)
+			(end 1.168 -3.554)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8c10f378-0116-44d5-ae4c-8df32433f4bb")
+		)
+		(fp_line
+			(start 2.013 -8.037)
+			(end 2.546 -7.504)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cec292f3-f4f6-4868-8950-c744d13a8140")
+		)
+		(fp_line
+			(start 2.209 -3.15)
+			(end 1.73 -3.449)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "375f4e2b-65cc-4c24-82a4-8e2bd2a1bc3a")
+		)
+		(fp_line
+			(start 2.546 -7.504)
+			(end 2.546 -7.282)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "d4be81d1-e7d9-4cd9-96b9-11d73f5da882")
+		)
+		(fp_line
+			(start 2.546 -7.282)
+			(end 2.633 -6.844)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9b806fdd-df03-4271-a635-e37b091882a8")
+		)
+		(fp_line
+			(start 2.547 -2.697)
+			(end 2.209 -3.15)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "22f065d8-ad42-4d57-b176-156318f69bae")
+		)
+		(fp_line
+			(start 2.633 -6.844)
+			(end 2.877 -6.477)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "87cc8911-46c4-4df9-832c-bebed8d9c855")
+		)
+		(fp_line
+			(start 2.701 -2.139)
+			(end 2.547 -2.697)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "aab8ca63-29f5-4ef4-8bf1-8511de593117")
+		)
+		(fp_line
+			(start 2.783 -1.841)
+			(end 2.701 -2.139)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c689921a-0ade-44e9-8e62-35794f9a1028")
+		)
+		(fp_line
+			(start 2.877 -6.477)
+			(end 3.244 -6.233)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "8173a32a-9e79-4054-877a-76922009500f")
+		)
+		(fp_line
+			(start 2.976 -1.583)
+			(end 2.783 -1.841)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b74e937d-3b69-407b-887e-710a3e1029bc")
+		)
+		(fp_line
+			(start 3.244 -6.233)
+			(end 3.682 -6.146)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "53b5324c-e568-4132-ac2d-583e7b7f7be2")
+		)
+		(fp_line
+			(start 3.25 -1.413)
+			(end 2.976 -1.583)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c5827524-30a0-4f44-aa2e-745b4b7a80d3")
+		)
+		(fp_line
+			(start 3.56 -1.354)
+			(end 3.25 -1.413)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "9d5f02e3-38a4-42b0-8d05-369cfb40ef80")
+		)
+		(fp_line
+			(start 3.682 -6.146)
+			(end 6.482 -6.146)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "7886f9ac-67ce-4e4f-9aa0-7ca5832a0d4c")
+		)
+		(fp_line
+			(start 6.482 -6.146)
+			(end 6.809 -6.081)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "0f752f24-6e34-4cc6-9ddd-25e4b0818d1c")
+		)
+		(fp_line
+			(start 6.809 -6.081)
+			(end 7.092 -5.892)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "b7d23d38-03c5-425a-a1af-c907967c0418")
+		)
+		(fp_line
+			(start 7.092 -5.892)
+			(end 7.281 -5.609)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "283b581a-9b1a-45fd-ac94-bc22891d1186")
+		)
+		(fp_line
+			(start 7.281 -5.609)
+			(end 7.366 -5.182)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "70346263-c1e3-4e40-bed4-695cfae07dde")
+		)
+		(fp_line
+			(start 7.283 -2.296)
+			(end 7.646 -2.296)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "76e57151-1b1b-4890-a2db-22090defe89e")
+		)
+		(fp_line
+			(start 7.646 -2.296)
+			(end 7.646 -1.354)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "ddd8a393-4764-43f6-b34a-ae7055ba58bf")
+		)
+		(fp_line
+			(start 7.646 -1.354)
+			(end 3.56 -1.354)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "502046a2-5759-475c-abcb-1055e81098e2")
+		)
+		(fp_line
 			(start -7.25 -7.25)
 			(end -7.25 7.25)
 			(stroke
@@ -21740,6 +23102,306 @@
 			(uuid "b8f5a5c7-8b7a-47b9-b62e-6ccd542e7af1")
 		)
 		(fp_line
+			(start -2.452 -7.523)
+			(end -1.523 -8.452)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f0be095d-f1f4-4370-8885-9ed506612137")
+		)
+		(fp_line
+			(start -2.452 -4.377)
+			(end -2.452 -7.523)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "7da6ef5f-d462-4f11-8d7f-d794008b9f2f")
+		)
+		(fp_line
+			(start -1.523 -8.452)
+			(end 1.278 -8.452)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3daeb5ab-8e40-4a00-8843-7fb26fd0ea93")
+		)
+		(fp_line
+			(start -1.523 -3.448)
+			(end -2.452 -4.377)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "916a943c-5773-4cb7-81d3-f2b46369be7e")
+		)
+		(fp_line
+			(start 1.159 -3.448)
+			(end -1.523 -3.448)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ba022016-3c06-4a15-869d-8c5ba02d3363")
+		)
+		(fp_line
+			(start 1.278 -8.452)
+			(end 1.712 -8.366)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "3fecb8f4-7c78-4763-b665-5b2bfa2b9964")
+		)
+		(fp_line
+			(start 1.691 -3.348)
+			(end 1.159 -3.448)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "53cfb3fd-bce6-4c15-b648-58fabb68f0cb")
+		)
+		(fp_line
+			(start 1.712 -8.366)
+			(end 2.081 -8.119)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "212bf02e-b83b-4848-a1c3-7af6f95f6da5")
+		)
+		(fp_line
+			(start 2.081 -8.119)
+			(end 2.652 -7.548)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "514922da-adb4-47c1-b226-1195bf25fa68")
+		)
+		(fp_line
+			(start 2.136 -3.071)
+			(end 1.691 -3.348)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0268d662-3a6f-4ac4-b42f-77ec48818496")
+		)
+		(fp_line
+			(start 2.45 -2.65)
+			(end 2.136 -3.071)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "87cbb0fa-913d-405f-ad1e-27b73ca348cf")
+		)
+		(fp_line
+			(start 2.599 -2.111)
+			(end 2.45 -2.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e4af3fee-5e1b-4b36-bf06-99d813506542")
+		)
+		(fp_line
+			(start 2.652 -7.548)
+			(end 2.652 -7.292)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5b01ce29-9989-4959-9777-05b17d3cd60c")
+		)
+		(fp_line
+			(start 2.652 -7.292)
+			(end 2.733 -6.885)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "0f897d71-c441-4334-ab47-0ef22be7775b")
+		)
+		(fp_line
+			(start 2.687 -1.794)
+			(end 2.599 -2.111)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "008283e5-c300-4e3d-aa89-4cd10a588337")
+		)
+		(fp_line
+			(start 2.733 -6.885)
+			(end 2.953 -6.553)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "30690e68-fae8-4265-8a4a-95a9eb73ba4f")
+		)
+		(fp_line
+			(start 2.903 -1.503)
+			(end 2.687 -1.794)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1eb4034f-c92d-44f8-be0e-4590397476b0")
+		)
+		(fp_line
+			(start 2.953 -6.553)
+			(end 3.285 -6.333)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b5cf5192-9f24-4ce5-8b34-ee9f620965d2")
+		)
+		(fp_line
+			(start 3.211 -1.312)
+			(end 2.903 -1.503)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "588a02c3-5535-4f5e-bdb7-4813a1dd7174")
+		)
+		(fp_line
+			(start 3.285 -6.333)
+			(end 3.692 -6.252)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "d1744b03-e77f-4322-a3bd-6a54afc2e0b4")
+		)
+		(fp_line
+			(start 3.55 -1.248)
+			(end 3.211 -1.312)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b71226e2-4b80-4d11-9101-2ab1f0100146")
+		)
+		(fp_line
+			(start 3.692 -6.252)
+			(end 6.492 -6.252)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "dcc2f2b0-7861-4579-9314-fb42f809ef9f")
+		)
+		(fp_line
+			(start 6.492 -6.252)
+			(end 6.85 -6.181)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e50f474c-98ae-4b63-a009-3423f4df5532")
+		)
+		(fp_line
+			(start 6.85 -6.181)
+			(end 7.168 -5.968)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "91f4a6a0-4b87-4a35-800f-862d5fd0094e")
+		)
+		(fp_line
+			(start 7.168 -5.968)
+			(end 7.381 -5.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "36ff2b01-be95-4a15-80c3-f1e0acf0a90d")
+		)
+		(fp_line
+			(start 7.381 -5.65)
+			(end 7.452 -5.292)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "bee95d13-2711-4631-8b6a-5c0692e44560")
+		)
+		(fp_line
+			(start 7.452 -5.292)
+			(end 7.452 -2.402)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b2b85865-6429-48f9-a16d-b2b8e276aac1")
+		)
+		(fp_line
+			(start 7.452 -2.402)
+			(end 7.752 -2.402)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "1bea8abd-eda9-4b22-9c88-55ce929bfe32")
+		)
+		(fp_line
+			(start 7.752 -2.402)
+			(end 7.752 -1.248)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "433d2df0-0dbc-47b2-9c7e-7117cc17fc28")
+		)
+		(fp_line
+			(start 7.752 -1.248)
+			(end 3.55 -1.248)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "765f949a-d077-4cb3-a454-3d63936c39e3")
+		)
+		(fp_line
 			(start -7.75 -7.75)
 			(end -7.75 7.75)
 			(stroke
@@ -21778,6 +23440,286 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "49c3cf3d-4c30-4349-8cc7-bead8eb2c0c0")
+		)
+		(fp_line
+			(start -2.275 -7.45)
+			(end -1.45 -8.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2a4b0a55-0d8d-4df7-ad70-daafb68c84b4")
+		)
+		(fp_line
+			(start -1.45 -8.275)
+			(end 1.261 -8.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5d52dafb-3874-4b72-9191-02b3d97b915b")
+		)
+		(fp_line
+			(start -1.45 -3.625)
+			(end -2.275 -4.45)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "dde1c164-30b6-4c6d-ade3-47272449c242")
+		)
+		(fp_line
+			(start 1.175 -3.625)
+			(end -1.45 -3.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "bf8d0630-bca7-40ef-9f28-739f573f1161")
+		)
+		(fp_line
+			(start 1.261 -8.275)
+			(end 1.643 -8.199)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "fefdbf3b-9a0a-4f5b-a655-584d38ca956a")
+		)
+		(fp_line
+			(start 1.643 -8.199)
+			(end 1.968 -7.982)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "8fb82a1c-fe73-4c96-8582-fe94d13187bb")
+		)
+		(fp_line
+			(start 1.756 -3.516)
+			(end 1.175 -3.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7c5a28ff-e2b9-48fc-b531-9ade8ac8930a")
+		)
+		(fp_line
+			(start 1.968 -7.982)
+			(end 2.475 -7.475)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "7396bed4-2bc7-4c2b-801d-91e297e797e8")
+		)
+		(fp_line
+			(start 2.258 -3.203)
+			(end 1.756 -3.516)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "68811cc7-eedd-46c8-972f-f6b37153c75d")
+		)
+		(fp_line
+			(start 2.475 -7.475)
+			(end 2.475 -7.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "d1aad007-4732-45ff-a754-fb1db33e4693")
+		)
+		(fp_line
+			(start 2.475 -7.275)
+			(end 2.566 -6.816)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "fd1c2d80-26e4-42af-9ad5-5ba047dd858e")
+		)
+		(fp_line
+			(start 2.566 -6.816)
+			(end 2.826 -6.426)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c03645e5-990a-41af-b010-44bcfc5e14e4")
+		)
+		(fp_line
+			(start 2.612 -2.729)
+			(end 2.258 -3.203)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "6e8765e7-e928-4fbe-9672-fe7d46648636")
+		)
+		(fp_line
+			(start 2.769 -2.158)
+			(end 2.612 -2.729)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "47a4f226-deb0-4d47-aee5-229b321b7d04")
+		)
+		(fp_line
+			(start 2.826 -6.426)
+			(end 3.216 -6.166)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5c856fb1-749b-4ba6-b689-e89686e3fa94")
+		)
+		(fp_line
+			(start 2.848 -1.873)
+			(end 2.769 -2.158)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "84ace827-c8b1-4892-b66b-88b8da29f3ef")
+		)
+		(fp_line
+			(start 3.025 -1.636)
+			(end 2.848 -1.873)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ac0dccf7-37a3-490f-853e-77871da6cacc")
+		)
+		(fp_line
+			(start 3.216 -6.166)
+			(end 3.675 -6.075)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e7148f7d-6dd1-478d-8c8b-cb477db2fa13")
+		)
+		(fp_line
+			(start 3.276 -1.48)
+			(end 3.025 -1.636)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "95c8fe92-67b5-4c87-89ae-20d118eda810")
+		)
+		(fp_line
+			(start 3.567 -1.425)
+			(end 3.276 -1.48)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "23f4bcab-ef4d-44fd-bc0d-b59d17a1af10")
+		)
+		(fp_line
+			(start 3.675 -6.075)
+			(end 6.475 -6.075)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "39a4c688-0b12-412c-9bfc-59e744556e0b")
+		)
+		(fp_line
+			(start 6.475 -6.075)
+			(end 6.781 -6.014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1d048771-fa08-4830-8ab4-3802ce054ff2")
+		)
+		(fp_line
+			(start 6.781 -6.014)
+			(end 7.041 -5.841)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "253f63a0-21f5-4c29-8f06-1b9500831edd")
+		)
+		(fp_line
+			(start 7.041 -5.841)
+			(end 7.214 -5.581)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "cc5b72a4-aba4-4f70-acbf-b0ed81977b82")
+		)
+		(fp_line
+			(start 7.214 -5.581)
+			(end 7.275 -5.275)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "5d2e5bd8-76c6-4089-819a-652699fca56c")
+		)
+		(fp_line
+			(start 7.275 -2.225)
+			(end 7.575 -2.225)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "210a4c6c-2c5e-46bf-ad57-45a6ac54c3ac")
+		)
+		(fp_line
+			(start 7.575 -2.225)
+			(end 7.575 -1.425)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "3ba6fd0f-d3e3-4445-a69a-c6a230080b0a")
+		)
+		(fp_line
+			(start 7.575 -1.425)
+			(end 3.567 -1.425)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "ae5ebc32-e059-4d29-a183-3d5fe162c135")
 		)
 		(fp_line
 			(start -7.5 -7.5)
@@ -21830,45 +23772,63 @@
 				)
 			)
 		)
-		(pad "" thru_hole circle
-			(at -5 5.15)
-			(size 2.6 2.6)
-			(drill 1.6)
+		(pad "" np_thru_hole circle
+			(at -5.5 0)
+			(size 1.9 1.9)
+			(drill 1.9)
 			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
 			(uuid "8de762b3-c4e8-4648-8c97-36060d2fb07c")
 		)
 		(pad "" np_thru_hole circle
+			(at 0 -5.9)
+			(size 3.05 3.05)
+			(drill 3.05)
+			(layers "*.Cu" "*.Mask")
+			(uuid "3629052d-b214-4a5c-8433-8225071ade6f")
+		)
+		(pad "" np_thru_hole circle
 			(at 0 0)
-			(size 5.05 5.05)
-			(drill 5.05)
+			(size 3.45 3.45)
+			(drill 3.45)
 			(layers "*.Cu" "*.Mask")
 			(uuid "e8a9f1c0-ed91-44e3-a959-96ce98b987a2")
 		)
-		(pad "1" thru_hole circle
-			(at 0 -5.9)
-			(size 2.2 2.2)
-			(drill 1.2)
+		(pad "" np_thru_hole circle
+			(at 5 -3.8)
+			(size 3.05 3.05)
+			(drill 3.05)
 			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+			(uuid "006dfa4d-0743-437e-8280-ff52625767a3")
+		)
+		(pad "" np_thru_hole circle
+			(at 5.5 0)
+			(size 1.9 1.9)
+			(drill 1.9)
+			(layers "*.Cu" "*.Mask")
+			(uuid "ccd92878-206f-4621-ab89-e5070c1d8c06")
+		)
+		(pad "1" smd roundrect
+			(at -3.5 -6)
+			(size 2.55 2.5)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1)
 			(net "GND")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "8422881c-4ce9-4aae-a595-4eb0196e253d")
 		)
-		(pad "2" thru_hole circle
-			(at 5 -3.8)
-			(size 2.2 2.2)
-			(drill 1.2)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
+		(pad "2" smd roundrect
+			(at 8.5 -3.8)
+			(size 2.55 2.5)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(roundrect_rratio 0.1)
 			(net "/Key Switch 1")
 			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "2f30eb23-012e-405d-aedb-e13721f49295")
 		)
 		(embedded_fonts no)
-		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step"
+		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21943,6 +23903,12 @@
 		(path "/f088e56b-a8b9-4577-9637-299fb8f0182b")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22559,6 +24525,12 @@
 		(path "/d2bf2d05-8f55-4d27-a8a8-7f840b0474fc")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23477,6 +25449,12 @@
 		(path "/bedc56cb-5a6f-4a23-9a99-c811339677f8")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23791,6 +25769,12 @@
 		(path "/8941382c-be1e-4b16-8115-7c66c2df0cd8")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25011,6 +26995,12 @@
 		(path "/3ec9a2ec-5bdc-4764-9dd1-17f2388ea6b2")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25627,6 +27617,12 @@
 		(path "/83a7f14f-3e6d-414b-999f-eccbddeb3240")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25941,6 +27937,12 @@
 		(path "/822b02e8-68e4-41d9-aa57-995eecae7f7f")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27161,6 +29163,12 @@
 		(path "/42950fb8-7525-4c47-ae46-bcd0691775c3")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27475,6 +29483,12 @@
 		(path "/e317a4f8-4591-4912-b9ad-f2db9e5c1b0b")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27789,6 +29803,12 @@
 		(path "/6cefa3af-ee2a-4b5a-bfce-2260758292e6")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28103,6 +30123,12 @@
 		(path "/8e7bc2dd-691e-4ec2-8a51-60fc2bcc6c75")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28719,6 +30745,12 @@
 		(path "/d759ecf0-42ef-4855-bf7e-7bca48c57d22")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29637,6 +31669,12 @@
 		(path "/fcad4d50-f2a4-42ed-865e-2334b9c20531")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30555,6 +32593,12 @@
 		(path "/91a64271-e0b1-4ad6-b60f-ac2af79aea4f")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33405,6 +35449,12 @@
 		(path "/a683d337-5862-4f56-b814-559b227a9a4a")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33719,6 +35769,12 @@
 		(path "/8f543a2d-0763-4260-b5b0-522197019d26")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34939,6 +36995,12 @@
 		(path "/d8859dcb-20ab-4aea-8d14-271287d16d7b")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35253,6 +37315,12 @@
 		(path "/72c7fb40-06a4-424d-9fd0-e67d3b9c0884")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35567,6 +37635,12 @@
 		(path "/44df136e-32b0-410e-8b92-ab9e421105ae")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36183,6 +38257,12 @@
 		(path "/612714f0-4746-4829-bd6d-376aac26bb70")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36497,6 +38577,12 @@
 		(path "/648157af-584d-4919-96ac-8a8ee6469787")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37113,6 +39199,12 @@
 		(path "/3b39d60c-6e67-4ac0-85d7-f441bf49031e")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38031,6 +40123,12 @@
 		(path "/98048e56-121f-4165-8b0d-d9b768860de9")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38647,6 +40745,12 @@
 		(path "/3d32e531-764a-4a39-a9a7-d4e8a169318b")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38961,6 +41065,12 @@
 		(path "/e2ba6fcb-b72e-4306-a658-b42f76e8cd69")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39577,6 +41687,12 @@
 		(path "/208ca09b-7cb6-43f6-b438-dff81f14d309")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40797,6 +42913,12 @@
 		(path "/afd8fc63-fe16-42cb-89b1-0f86beb29963")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41413,6 +43535,12 @@
 		(path "/049eb971-1e0e-4f74-8453-c9e6a5f68599")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41727,6 +43855,12 @@
 		(path "/1c874195-c9fe-4fa1-a3c2-47e9e1ac35d3")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42041,6 +44175,12 @@
 		(path "/4b2aa221-42aa-4f0d-ad2b-f86c88b6c1ab")
 		(sheetname "/")
 		(sheetfile "magnetic-chess-board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line

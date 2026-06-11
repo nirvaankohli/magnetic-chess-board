@@ -8458,7 +8458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Choc:Choc_V2"
+		(property "Footprint" "KiSwitch_Hotswap_Kalih:SW_Hotswap_Kailh_Choc_V1"
 			(at 379.73 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -11074,7 +11074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Choc:Choc_V2"
+		(property "Footprint" "KiSwitch_Hotswap_Kalih:SW_Hotswap_Kailh_Choc_V1"
 			(at 379.73 88.9 0)
 			(hide yes)
 			(show_name no)
