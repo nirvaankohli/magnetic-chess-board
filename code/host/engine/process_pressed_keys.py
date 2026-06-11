@@ -200,9 +200,14 @@ class ProcessPressedKeys:
 
 
         game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
+        game_state_img_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.svg"
         
         with open(game_state_path, "w") as f:
             json.dump(self.game_state, f, indent=4)
+
+        with open(game_state_img_path, "w") as f:
+
+            f.write(chess.svg.board(board=board, size=400))
 
         return {
             "status": "success",

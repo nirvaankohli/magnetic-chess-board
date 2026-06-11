@@ -1,0 +1,1 @@
+I used ai to fix a loop, and helping with a bug where converting move object to notation wasn't working - full transparency. Also after recording I made a fake test with it(it was bc of my codex automation - it applied tow rong repo).

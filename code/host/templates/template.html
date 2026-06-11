@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess Game</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+    <body class="bg-zinc-900 text-white min-h-screen flex flex-col items-center justify-start p-8">
+
+        <h1 class="text-4xl font-bold text-stone-200 p-3">Chess Game {{ game_id }}</h1>
+        <div class="w-4/5 grid grid-cols-3 gap-4 p-8">
+            <div class="col-span-2 rounded border border-stone-500 overflow-hidden">
+                <img class="w-full h-full object-cover" src="{{ file_name }}" alt="Chess Game {{ game_id }}">
+            </div>
+            <li class="col-span-1 bg-zinc-850 p-4 rounded border border-stone-500">
+                <h2 class="text-xl font-semibold mb-2">Move History</h2>
+                <ul class="list-none space-y-2 divide-y divide-stone-700">
+                </ul>
+            </li>
+        </div>
+
+    </body>
+
+    <script>
+
+        conversion_dict = {
+            'a': 0,
+            'b': 1,
+            'c': 2,
+            'd': 3,
+            'e': 4,
+            'f': 5,
+            'g': 6,
+            'h': 7
+        }
+
+        function convertToChessNotation(move) {
+
+            const files = ['a','b','c','d','e','f','g','h'];
+            const piece_map = {
+                'p': 'p',
+                'r': 'r',
+                'n': 'n',
+                'b': 'b',
+                'q': 'q',
+                'k': 'k'
+            }
+
+            if (typeof move === 'string') {
+
+                if (move.length === 4) {
+                    const from = move.slice(0,2);
+                    const to = move.slice(2,4);
+                    return `${from}${to}`;
+                }
+                return move; 
+            }
+
+            if (move && Array.isArray(move.from_square) && Array.isArray(move.to_square)) {
+                const fromRow = move.from_square[0];
+                const fromCol = move.from_square[1];
+                const toRow = move.to_square[0];
+                const toCol = move.to_square[1];
+
+                const to = `${files[toCol]}${toRow + 1}`;
+                const piece = move.piece_moved ? piece_map[String(move.piece_moved).toLowerCase()] || String(move.piece_moved).toLowerCase() : 'p';
+
+                return `${piece}${to}`;
+            }
+
+            return '-';
+        }
+
+        const moves = {{ moves | tojson }}; 
+        list_of_moves_ul = document.querySelector("ul");
+        
+        list_of_moves_white = {};
+        list_of_moves_black = {};
+
+        for (let i = 0; i < moves.length; i++) {
+            // even index is white's move, odd index is black
+            if (i % 2 === 0) {
+                list_of_moves_white[i] = moves[i];
+            } else {
+                list_of_moves_black[i] = moves[i];
+            }
+        }
+
+        console.log("White moves:", list_of_moves_white);
+        console.log("Black moves:", list_of_moves_black);
+
+
+        for (let i = 0; i < moves.length; i += 2) {
+
+            let white_move = moves[i];
+            let black_move = (i + 1 < moves.length) ? moves[i + 1] : '-';
+
+            black_move = (black_move !== '-') ? convertToChessNotation(black_move) : '-';
+            white_move = convertToChessNotation(white_move);
+
+            console.log(`White move: ${white_move}, Black move: ${black_move}`);
+
+            const move = `${white_move} | ${black_move}`;
+
+            const li = document.createElement("li");
+            li.className = "py-2 text-sm text-stone-200";
+            li.textContent = move;
+            list_of_moves_ul.appendChild(li);
+
+        }
+
+
+    </script>
+</html>
