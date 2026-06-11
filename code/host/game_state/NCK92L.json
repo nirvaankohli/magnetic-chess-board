@@ -1,0 +1,247 @@
+{
+    "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+    "board": [
+        [
+            "R",
+            "N",
+            "B",
+            " ",
+            "K",
+            " ",
+            "N",
+            "R"
+        ],
+        [
+            "P",
+            "P",
+            "P",
+            "P",
+            " ",
+            "P",
+            "P",
+            "P"
+        ],
+        [
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        [
+            " ",
+            " ",
+            "B",
+            " ",
+            "P",
+            " ",
+            " ",
+            " "
+        ],
+        [
+            " ",
+            " ",
+            " ",
+            " ",
+            "p",
+            " ",
+            " ",
+            "Q"
+        ],
+        [
+            " ",
+            " ",
+            "n",
+            " ",
+            " ",
+            "n",
+            " ",
+            " "
+        ],
+        [
+            "p",
+            "p",
+            "p",
+            "p",
+            " ",
+            "p",
+            "p",
+            "p"
+        ],
+        [
+            "r",
+            " ",
+            "b",
+            "q",
+            "k",
+            "b",
+            " ",
+            "r"
+        ]
+    ],
+    "magnetic_state": [
+        [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+        ],
+        [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+        ],
+        [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+        ],
+        [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+        ]
+    ],
+    "white_to_move": true,
+    "white_timer": 296.0,
+    "game_over": false,
+    "current_game_id": "NCK92L",
+    "black_timer": 294.0,
+    "last_move_timestamp": 1780953085.868161,
+    "move_history": [
+        {
+            "from_square": [
+                1,
+                4
+            ],
+            "to_square": [
+                3,
+                4
+            ],
+            "piece_moved": "P",
+            "piece_taken": null
+        },
+        {
+            "from_square": [
+                6,
+                4
+            ],
+            "to_square": [
+                4,
+                4
+            ],
+            "piece_moved": "p",
+            "piece_taken": null
+        },
+        {
+            "from_square": [
+                0,
+                3
+            ],
+            "to_square": [
+                4,
+                7
+            ],
+            "piece_moved": "Q",
+            "piece_taken": null
+        },
+        {
+            "from_square": [
+                7,
+                1
+            ],
+            "to_square": [
+                5,
+                2
+            ],
+            "piece_moved": "n",
+            "piece_taken": null
+        },
+        {
+            "from_square": [
+                0,
+                5
+            ],
+            "to_square": [
+                3,
+                2
+            ],
+            "piece_moved": "B",
+            "piece_taken": null
+        },
+        {
+            "from_square": [
+                7,
+                6
+            ],
+            "to_square": [
+                5,
+                5
+            ],
+            "piece_moved": "n",
+            "piece_taken": null
+        }
+    ]
+}

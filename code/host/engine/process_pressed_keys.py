@@ -1,11 +1,15 @@
 from pathlib import Path
 import json
+import re
 import time
 import chess
 import chess.svg 
+
 def board_to_2d_array(board):
+
     arr = []
-    for rank in reversed(range(8)):
+
+    for rank in (range(8)):
         row = []
         for file in range(8):
             piece = board.piece_at(chess.square(file, rank))
@@ -14,7 +18,7 @@ def board_to_2d_array(board):
     return arr
 
 def board_to_magnetic_state(board):
-    return [[1 if board.piece_at(chess.square(file, rank)) else 0 for file in range(8)] for rank in reversed(range(8))]
+    return [[1 if board.piece_at(chess.square(file, rank)) else 0 for file in range(8)] for rank in (range(8))]
 
 def square_to_row_col(square, matrix):
     name = chess.square_name(square)
@@ -25,26 +29,44 @@ def square_to_row_col(square, matrix):
     return None
 
 class ProcessPressedKeys:
-
-    def __init__(self, data):
+    def __init__(self, data, game_id):
+        
+        self.game_id = re.sub(r'[^a-zA-Z0-9]', '', game_id) if game_id else "default"
         self.update_data(data)
 
     def load_game_state(self):
-        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / "game_state.json"
+        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
+        
         if game_state_path.exists():
             with open(game_state_path, "r") as f:
                 return json.load(f)
-        return {}
+        else:
+            with open(game_state_path, "w") as f:
+                initial_state = {
+                    "fen": chess.STARTING_FEN,
+                    "board": board_to_2d_array(chess.Board()),
+                    "magnetic_state": board_to_magnetic_state(chess.Board()),
+                    "white_to_move": True,
+                    "white_timer": 300,
+                    "game_over": False,
+                    "current_game_id": self.game_id,
+                    "black_timer": 300,
+                    "last_move_timestamp": self.timestamp,
+                    "move_history": []
+                }
+                json.dump(initial_state, f, indent=4)
+            return initial_state
+    
+        
     
     def update_data(self, data):
         self.data = data
         self.pressed_keys = data["pressed_keys"]
         self.matrix = data["matrix"]
+        self.chose_key = data.get("chose_key", None)
         self.timestamp = data["timestamp"]
 
     def process(self):
-
-
 
         self.game_state = self.load_game_state()
 
@@ -52,17 +74,9 @@ class ProcessPressedKeys:
         
             return {"status": "error", "message": "Failed to load game state"}
 
-
         fen = self.game_state.get("fen", chess.STARTING_FEN)
         board = chess.Board(fen)
 
-        svg_data = chess.svg.board(
-            board,
-            size=350,
-        )  
-
-        with open("chessboard.svg", "w") as f:
-            f.write(svg_data)
 
         try:
 
@@ -85,6 +99,7 @@ class ProcessPressedKeys:
 
 
         matched_moves = []
+        
         for move in board.legal_moves:
 
             board.push(move)
@@ -95,18 +110,44 @@ class ProcessPressedKeys:
             
                 matched_moves.append(move)
 
+        if self.chose_key:
+
+            self.chose_key = chess.Move.from_uci(self.chose_key)
+
+            if self.chose_key in matched_moves:
+
+                matched_moves = [self.chose_key]
+
+
         if not matched_moves:
-            
-            return {
-                "status": "in_progress",
-                "message": "Awaiting valid move completion.",
-                "game_state": self.game_state
-            }
+            raise Exception("Invalid move")
 
 
         if len(matched_moves) > 1:
-            matched_move = next((m for m in matched_moves if m.promotion == chess.QUEEN), matched_moves[0])
+
+            # Change from last time - so basically if we have multiple matches, and those matches are promotion we promote the queen
+            # If not we send back ambigouous 
+
+            is_promotion = any(move.promotion for move in matched_moves)
+
+            if is_promotion:
+
+                matched_move = next((m for m in matched_moves if m.promotion == chess.QUEEN), matched_moves[0])
+            
+            else:
+
+                return {
+
+                    "status": "ambiguous",
+                    "message": "Multiple possible moves detected. Please clarify the move.",
+                    "possible_moves": [chess.Move.uci(move) for move in matched_moves]
+
+                }
+
+        
+
         else:
+           
             matched_move = matched_moves[0]
 
 
@@ -158,9 +199,15 @@ class ProcessPressedKeys:
 
 
 
-        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / "game_state.json"
+        game_state_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.json"
+        game_state_img_path = Path(__file__).parent.parent.resolve() / "game_state" / f"{self.game_id}.svg"
+        
         with open(game_state_path, "w") as f:
             json.dump(self.game_state, f, indent=4)
+
+        with open(game_state_img_path, "w") as f:
+
+            f.write(chess.svg.board(board=board, size=400))
 
         return {
             "status": "success",

@@ -22,10 +22,18 @@ def create_matrix(rows: int, columns: int):
 
 def main():
 
+    # first create game and get game id
+
+    server_url = "http://127.0.0.1:5000/pressed_keys"
+
+    game_id = requests.post(server_url.replace("/pressed_keys", "/make_game")).json().get("game_id")
+
     matrix = create_matrix(8, 8)
+
     pressed_keys = [
         [0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6], [0, 7], 
-        [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [1, 6], [1, 7],
+        [1, 0], [1, 1], [1, 2], [1, 3],         [1, 5], [1, 6], [1, 7],
+                                        [3, 4],
         [6, 0], [6, 1], [6, 2], [6, 3], [6, 4], [6, 5], [6, 6], [6, 7],
         [7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5], [7, 6], [7, 7]
     ]
@@ -37,9 +45,8 @@ def main():
         "timestamp": timestamp
     }
 
-    server_url = "http://127.0.0.1:5000/pressed_keys"
 
-    response = requests.post(server_url, json=data)
+    response = requests.post(server_url + f"/?game_id={game_id}", json=data)
 
     if response.status_code == 200:
 
@@ -55,8 +62,10 @@ def main():
 
     pressed_keys = [
         [0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [0, 5], [0, 6], [0, 7], 
-        [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [1, 6], [1, 7],
-        [6, 0], [6, 1], [4, 2], [6, 3], [6, 4], [6, 5], [6, 6], [6, 7],
+        [1, 0], [1, 1], [1, 2], [1, 3],         [1, 5], [1, 6], [1, 7],
+                                        [3, 4],
+        [6, 0], [6, 1],         [6, 3], [6, 4], [6, 5], [6, 6], [6, 7],
+                        [4, 2],
         [7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5], [7, 6], [7, 7]
     ]
     
@@ -68,7 +77,7 @@ def main():
         "timestamp": timestamp
     }
 
-    response = requests.post(server_url, json=data)
+    response = requests.post(server_url + f"/?game_id={game_id}", json=data)
 
 
     if response.status_code == 200:
