@@ -1,3 +1,4 @@
+
 # Initial Thoughts, Plans, Description, etc.
 
 ## Different Approaches
