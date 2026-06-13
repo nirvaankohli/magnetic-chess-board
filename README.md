@@ -4,8 +4,13 @@
 
 ![Chess Board](assets/ChessBoard.png)
 
+---
 
-Magnetic Chess Board is chess board with electromagnetic sensors underneath it, two key switches, and an OLED. It tracks your moves and upploads them to a local web server on your device so you can analyze your games later. It is powered by a Pico W.
+## What is this project?
+
+Magnetic Chess Board is a chessboard with electromagnetic sensors, two key switches and an OLED display. It tracks each move you make on the board via electromagnetic sensors(reedswitches) hidden within the board and uploads the game data to a local web server running on your device.
+
+The chessboard itself is powered by a Raspberry Pi Pico W. The board connects wirelessly to your host device and allows you to play physically while having all the benfits of being able to analyze your gameplay later. Games are stored in json & svg format and can also be seen through the web interface on your own device.
 
 ---
 
@@ -95,7 +100,7 @@ The server saves each game's state in `code/host/game_state/<game_id>.json` and 
 
 ---
 
-## How to Build
+## How to Build/Assemble
 
 Notice: You will need a way to 3D print parts for this
 
