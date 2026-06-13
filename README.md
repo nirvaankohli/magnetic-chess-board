@@ -102,7 +102,7 @@ The server saves each game's state in `code/host/game_state/<game_id>.json` and 
 
 ## How to Build/Assemble
 
-Notice: You will need a way to 3D print parts for this
+Notice: You will need a way to 3D print parts for this & also have to buy all materials from [bom](bom.csv)
 
 1. Go into `hardware/cad/3d-printed/pieces/` and print all the `.stl` files it contains. Below are which ones to print two times. 
     - Print `rook.stl`, `knight.stl`, and `bishop.stl` 2 times each for both black and white.
