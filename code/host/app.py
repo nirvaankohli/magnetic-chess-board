@@ -26,7 +26,6 @@ def view_game(game_id):
         game_state = json.load(f)
         list_of_moves = game_state.get("move_history", [])
 
-    # Generate a fully qualified absolute URL for the SVG board image
     game_state_img_url = url_for("serve_game_state", filename=f"{game_id}.svg", _external=True)
 
     return render_template("template.html", game_id=game_id, file_name=game_state_img_url, moves=list_of_moves)

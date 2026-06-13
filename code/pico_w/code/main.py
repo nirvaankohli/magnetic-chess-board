@@ -120,7 +120,7 @@ def handle_next_move(current_pressed, matrix, display, white_button, black_butto
         display.text("Invalid move. Try again.", 0, 10)
         display.show()
 
-    elif result.get("status") == "ambigouous":
+    elif result.get("status") == "ambiguous":
 
         display.fill(0)
         display.text("Multiple moves detected!", 0, 0)
@@ -167,9 +167,9 @@ def play_game():
 
     # get initial state 
 
-    game_id = urequests.post(server_url + "/make_game").json().get("game_id").json()
-
-    game_id = game_id.get("game_id")
+    response = urequests.post(server_url + "/make_game")
+    game_id = response.json().get("game_id")
+    response.close()
 
     while True:
 
@@ -204,6 +204,8 @@ def play_game():
 
 def main():
 
+    press_time = 0
+    held = False
 
     while not wlan.isconnected() and wlan.status() >= 0:
 
@@ -237,12 +239,14 @@ def main():
                     
                 elif not held and time.ticks_diff(time.ticks_ms(), press_time) > 2000:
 
+                    held = True
                     play_game()
                     break
 
             else:
                     
                 press_time = 0
+                held = False
 
             
             

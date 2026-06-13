@@ -1,0 +1,13 @@
+Info: X scale constrained.
+Info: Y scale constrained.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-F_Cu.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-B_Cu.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-F_Paste.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-B_Paste.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-F_Silkscreen.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-B_Silkscreen.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-F_Mask.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-B_Mask.gbr'.
+Plotted to '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-Edge_Cuts.gbr'.
+Created Gerber job file '/Users/nirvaank/Code/Hardware/fallout/magnetic-chess-board/magnetic-chess-board/hardware/magnetic-chess-board/magnetic-chess-board-job.gbrjob'.
+Info: Done.
